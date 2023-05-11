@@ -5,6 +5,8 @@ import (
 	"strings"
 )
 
+// https://leetcode.com/explore/interview/card/google/67/sql-2/3044/
+
 func main() {
 	input1 := []string{
 		"test.email+alex@leetcode.com",
