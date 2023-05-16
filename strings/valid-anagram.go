@@ -15,10 +15,7 @@ func IsAnagram(s string, t string) bool {
 
 	for _, v := range t {
 		count[v]--
-	}
-
-	for _, v := range count {
-		if v != 0 {
+		if count[v] < 0 {
 			return false
 		}
 	}
