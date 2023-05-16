@@ -1,31 +1,19 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 )
 
 // https://leetcode.com/explore/interview/card/google/67/sql-2/3044/
 
-func main() {
-	input1 := []string{
-		"test.email+alex@leetcode.com",
-		"test.e.mail+bob.cathy@leetcode.com",
-		"test.e.mail+bob.cathy@leetcode.com",
-		"testemail+david@lee.tcode.com",
-	}
+// var emailList = []string{
+// 	"test.email+alex@leetcode.com",
+// 	"test.e.mail+bob.cathy@leetcode.com",
+// 	"test.e.mail+bob.cathy@leetcode.com",
+// 	"testemail+david@lee.tcode.com",
+// }
 
-	fmt.Println(numUniqueEmails(input1))
-
-	input2 := []string{
-		"a@leetcode.com",
-		"b@leetcode.com",
-		"c@leetcode.com",
-	}
-	fmt.Println(numUniqueEmails(input2))
-}
-
-func numUniqueEmails(emails []string) int {
+func NumUniqueEmails(emails []string) int {
 	var emailCountMap = make(map[string]int)
 	for _, email := range emails {
 		identifier := uniqueIdentifier(email)
