@@ -1,5 +1,7 @@
 package main
 
+// https://leetcode.com/problems/valid-anagram/description/
+
 func IsAnagram(s string, t string) bool {
 	if len(s) != len(t) {
 		return false
