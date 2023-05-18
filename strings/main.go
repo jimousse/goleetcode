@@ -23,6 +23,10 @@ func main() {
 	// // is valid anagram
 	// fmt.Println(IsAnagram("rat", "car"))
 
-	// check s2 contains a permutation of s1
-	fmt.Println(CheckInclusion("adc", "dcda"))
+	// // check s2 contains a permutation of s1
+	// fmt.Println(CheckInclusion("adc", "dcda"))
+
+	// fmt.Println(CanPermutePalindrome("carerac"))
+
+	fmt.Println(IsOneEditDistance("a", "ac"))
 }
