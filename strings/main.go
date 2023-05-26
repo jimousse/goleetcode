@@ -1,8 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
 
@@ -28,5 +26,11 @@ func main() {
 
 	// fmt.Println(CanPermutePalindrome("carerac"))
 
-	fmt.Println(IsOneEditDistance("a", "ac"))
+	// fmt.Println(IsOneEditDistance("a", "ac"))
+
+	// fmt.Println(MinDistance("horse", "ros"))
+
+	matrixToRotate := [][]int{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}
+	RotateImage(matrixToRotate)
+	fmt.Println(matrixToRotate)
 }
